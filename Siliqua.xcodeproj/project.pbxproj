@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5D7C64A1F63F9F100B044C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7C6491F63F9F100B044C2 /* Foundation.framework */; };
+		B5D7C6541F63F9F100B044C2 /* Siliqua.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C6531F63F9F100B044C2 /* Siliqua.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5D7C6461F63F9F100B044C2 /* Siliqua.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Siliqua.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D7C6491F63F9F100B044C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5D7C64E1F63F9F100B044C2 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		B5D7C64F1F63F9F100B044C2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		B5D7C6511F63F9F100B044C2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		B5D7C6521F63F9F100B044C2 /* Siliqua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Siliqua-Prefix.pch"; sourceTree = "<group>"; };
+		B5D7C6531F63F9F100B044C2 /* Siliqua.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Siliqua.mm; sourceTree = "<group>"; };
+		B5D7C6581F63F9F100B044C2 /* Siliqua.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Siliqua.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Siliqua.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5D7C6421F63F9F100B044C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D7C64A1F63F9F100B044C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5D7C63C1F63F9F100B044C2 = {
+			isa = PBXGroup;
+			children = (
+				B5D7C64B1F63F9F100B044C2 /* Siliqua */,
+				B5D7C6481F63F9F100B044C2 /* Frameworks */,
+				B5D7C6471F63F9F100B044C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5D7C6471F63F9F100B044C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6461F63F9F100B044C2 /* Siliqua.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D7C6481F63F9F100B044C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6491F63F9F100B044C2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5D7C64B1F63F9F100B044C2 /* Siliqua */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6531F63F9F100B044C2 /* Siliqua.mm */,
+				B5D7C64C1F63F9F100B044C2 /* Package */,
+				B5D7C6501F63F9F100B044C2 /* Supporting Files */,
+			);
+			path = Siliqua;
+			sourceTree = "<group>";
+		};
+		B5D7C64C1F63F9F100B044C2 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C64D1F63F9F100B044C2 /* DEBIAN */,
+				B5D7C6551F63F9F100B044C2 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		B5D7C64D1F63F9F100B044C2 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C64E1F63F9F100B044C2 /* control.txt */,
+				B5D7C64F1F63F9F100B044C2 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		B5D7C6501F63F9F100B044C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6511F63F9F100B044C2 /* PackageVersion.plist */,
+				B5D7C6521F63F9F100B044C2 /* Siliqua-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5D7C6551F63F9F100B044C2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6561F63F9F100B044C2 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		B5D7C6561F63F9F100B044C2 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6571F63F9F100B044C2 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		B5D7C6571F63F9F100B044C2 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6581F63F9F100B044C2 /* Siliqua.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5D7C6431F63F9F100B044C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B5D7C6451F63F9F100B044C2 /* Siliqua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D7C65B1F63F9F100B044C2 /* Build configuration list for PBXNativeTarget "Siliqua" */;
+			buildPhases = (
+				B5D7C6411F63F9F100B044C2 /* Sources */,
+				B5D7C6421F63F9F100B044C2 /* Frameworks */,
+				B5D7C6431F63F9F100B044C2 /* Headers */,
+				B5D7C6441F63F9F100B044C2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siliqua;
+			productName = Siliqua;
+			productReference = B5D7C6461F63F9F100B044C2 /* Siliqua.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5D7C63D1F63F9F100B044C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					B5D7C6451F63F9F100B044C2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AUYLZA5X3V;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5D7C6401F63F9F100B044C2 /* Build configuration list for PBXProject "Siliqua" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5D7C63C1F63F9F100B044C2;
+			productRefGroup = B5D7C6471F63F9F100B044C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5D7C6451F63F9F100B044C2 /* Siliqua */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5D7C6441F63F9F100B044C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5D7C6411F63F9F100B044C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D7C6541F63F9F100B044C2 /* Siliqua.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B5D7C6591F63F9F100B044C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		B5D7C65A1F63F9F100B044C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		B5D7C65C1F63F9F100B044C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = AUYLZA5X3V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Siliqua/Siliqua-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		B5D7C65D1F63F9F100B044C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = AUYLZA5X3V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Siliqua/Siliqua-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5D7C6401F63F9F100B044C2 /* Build configuration list for PBXProject "Siliqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D7C6591F63F9F100B044C2 /* Debug */,
+				B5D7C65A1F63F9F100B044C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D7C65B1F63F9F100B044C2 /* Build configuration list for PBXNativeTarget "Siliqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D7C65C1F63F9F100B044C2 /* Debug */,
+				B5D7C65D1F63F9F100B044C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5D7C63D1F63F9F100B044C2 /* Project object */;
+}
