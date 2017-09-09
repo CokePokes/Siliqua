@@ -1,4 +1,6 @@
-# Siliqua
+# Siliqua 
+
+This version works on iOS9+
 
 Add a multiude of new actions to your AirPods.
 
