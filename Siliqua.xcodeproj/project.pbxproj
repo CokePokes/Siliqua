@@ -8,18 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B5D7C64A1F63F9F100B044C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7C6491F63F9F100B044C2 /* Foundation.framework */; };
-		B5D7C6541F63F9F100B044C2 /* Siliqua.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C6531F63F9F100B044C2 /* Siliqua.mm */; };
+		B5D7C65F1F63FAD100B044C2 /* Siliqua.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C65E1F63FAD100B044C2 /* Siliqua.m */; };
+		B5D7C6611F63FAE600B044C2 /* MediaRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D7C6601F63FAE600B044C2 /* MediaRemote.h */; };
+		B5D7C6631F63FB2600B044C2 /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7C6621F63FB2600B044C2 /* MediaRemote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5D7C6461F63F9F100B044C2 /* Siliqua.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Siliqua.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D7C6491F63F9F100B044C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B5D7C64E1F63F9F100B044C2 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		B5D7C64F1F63F9F100B044C2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		B5D7C6511F63F9F100B044C2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		B5D7C6521F63F9F100B044C2 /* Siliqua-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Siliqua-Prefix.pch"; sourceTree = "<group>"; };
-		B5D7C6531F63F9F100B044C2 /* Siliqua.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Siliqua.mm; sourceTree = "<group>"; };
 		B5D7C6581F63F9F100B044C2 /* Siliqua.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Siliqua.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Siliqua.plist; sourceTree = "<group>"; };
+		B5D7C65E1F63FAD100B044C2 /* Siliqua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Siliqua.m; sourceTree = "<group>"; };
+		B5D7C6601F63FAE600B044C2 /* MediaRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaRemote.h; sourceTree = "<group>"; };
+		B5D7C6621F63FB2600B044C2 /* MediaRemote.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaRemote.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks/MediaRemote.framework; sourceTree = DEVELOPER_DIR; };
+		B5D7C6671F63FC0800B044C2 /* SilquaPrefs.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SilquaPrefs.bundle; sourceTree = "<group>"; };
+		B5D7C66A1F63FC0800B044C2 /* SilquaPrefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SilquaPrefs.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D7C6631F63FB2600B044C2 /* MediaRemote.framework in Frameworks */,
 				B5D7C64A1F63F9F100B044C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +60,7 @@
 		B5D7C6481F63F9F100B044C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5D7C6621F63FB2600B044C2 /* MediaRemote.framework */,
 				B5D7C6491F63F9F100B044C2 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -62,7 +69,8 @@
 		B5D7C64B1F63F9F100B044C2 /* Siliqua */ = {
 			isa = PBXGroup;
 			children = (
-				B5D7C6531F63F9F100B044C2 /* Siliqua.mm */,
+				B5D7C6601F63FAE600B044C2 /* MediaRemote.h */,
+				B5D7C65E1F63FAD100B044C2 /* Siliqua.m */,
 				B5D7C64C1F63F9F100B044C2 /* Package */,
 				B5D7C6501F63F9F100B044C2 /* Supporting Files */,
 			);
@@ -81,7 +89,6 @@
 		B5D7C64D1F63F9F100B044C2 /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				B5D7C64E1F63F9F100B044C2 /* control.txt */,
 				B5D7C64F1F63F9F100B044C2 /* control */,
 			);
 			name = DEBIAN;
@@ -99,6 +106,8 @@
 		B5D7C6551F63F9F100B044C2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				B5D7C6661F63FC0800B044C2 /* PreferenceBundles */,
+				B5D7C6681F63FC0800B044C2 /* PreferenceLoader */,
 				B5D7C6561F63F9F100B044C2 /* MobileSubstrate */,
 			);
 			name = Library;
@@ -120,6 +129,32 @@
 			name = DynamicLibraries;
 			sourceTree = "<group>";
 		};
+		B5D7C6661F63FC0800B044C2 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6671F63FC0800B044C2 /* SilquaPrefs.bundle */,
+			);
+			name = PreferenceBundles;
+			path = Package/Library/PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		B5D7C6681F63FC0800B044C2 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C6691F63FC0800B044C2 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			path = Package/Library/PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		B5D7C6691F63FC0800B044C2 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				B5D7C66A1F63FC0800B044C2 /* SilquaPrefs.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,6 +162,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D7C6611F63FAE600B044C2 /* MediaRemote.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D7C6541F63F9F100B044C2 /* Siliqua.mm in Sources */,
+				B5D7C65F1F63FAD100B044C2 /* Siliqua.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +310,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Siliqua/Siliqua-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevDevice = 192.168.1.128;
+				iOSOpenDevInstallOnAnyBuild = YES;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
@@ -295,11 +332,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Siliqua/Siliqua-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevDevice = 192.168.1.128;
+				iOSOpenDevInstallOnAnyBuild = YES;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
