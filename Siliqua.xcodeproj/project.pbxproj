@@ -303,6 +303,7 @@
 		B5D7C65C1F63F9F100B044C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = AUYLZA5X3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -325,6 +326,7 @@
 		B5D7C65D1F63F9F100B044C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = AUYLZA5X3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
