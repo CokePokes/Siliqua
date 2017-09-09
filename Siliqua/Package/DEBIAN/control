@@ -1,6 +1,6 @@
 Package: com.laughingquoll.Siliqua
 Name: Siliqua
-Version: 1.0-1
+Version: 1.0-2
 Description: 
 Section: Tweaks
 Depends: firmware (>= 9.0), mobilesubstrate

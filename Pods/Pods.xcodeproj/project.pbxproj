@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36B56BB5191F341A47BE7F783FDBAE52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		755D6663BD21F2B245B6FD91DA3AEECC /* Pods-Siliqua-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEC1D34D6CC3B76351F9D008E585228 /* Pods-Siliqua-dummy.m */; };
+		BF0BB659BBC00A25203E21B9C3D694CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CD7F368DC6F253465CBF60A92EA041EF /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0787BDC9B5700504894002C614B72E /* NSTimer+Blocks.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D1D927CF7E659A0B1815BB61B35E1570 /* NSTimer-Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C140336864010E7FC632F6B0EC3A1FA /* NSTimer-Blocks-dummy.m */; };
+		D1E53DB934DC501FF87B0B7A123472FE /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7CDE8656A054B1ED1EABCABF1492C7 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A935581E6F40DE195A4128EC4F6B8A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA90B05AA5C2F1ADFD061D57E35B0F7A;
+			remoteInfo = "NSTimer-Blocks";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FD75619D0DE7258CEF621648BC8514A /* NSTimer-Blocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTimer-Blocks-prefix.pch"; sourceTree = "<group>"; };
+		189AF9B991BB81F1D0697C913F22FA8A /* Pods-Siliqua-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Siliqua-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A0C2D3817F3F38F039AC653DA4CDE25 /* libNSTimer-Blocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNSTimer-Blocks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45100FC71C0E862054807EA3AE991ADB /* libPods-Siliqua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Siliqua.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C140336864010E7FC632F6B0EC3A1FA /* NSTimer-Blocks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSTimer-Blocks-dummy.m"; sourceTree = "<group>"; };
+		5F0787BDC9B5700504894002C614B72E /* NSTimer+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		8096C8AC5B10642BFF97CDCE977373EC /* Pods-Siliqua-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Siliqua-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB7CDE8656A054B1ED1EABCABF1492C7 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEBB88A3D9FE83FB782FFC0C378DDB06 /* Pods-Siliqua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Siliqua.release.xcconfig"; sourceTree = "<group>"; };
+		DCDBED3F63613C51F4C36E9E9CCB494D /* Pods-Siliqua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Siliqua.debug.xcconfig"; sourceTree = "<group>"; };
+		E21C120CEE7652B16AD4DB42AF121CA7 /* Pods-Siliqua-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Siliqua-acknowledgements.plist"; sourceTree = "<group>"; };
+		F418ABA7F2B0298E45CA8C446B6E613D /* NSTimer-Blocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSTimer-Blocks.xcconfig"; sourceTree = "<group>"; };
+		FCEC1D34D6CC3B76351F9D008E585228 /* Pods-Siliqua-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Siliqua-dummy.m"; sourceTree = "<group>"; };
+		FFFEBD470E38FE9CAC19CF072DF89852 /* Pods-Siliqua-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Siliqua-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29DDCA42E8B195B7195D0207BA6F6F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B56BB5191F341A47BE7F783FDBAE52 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9E53A23841A32B3798606739F8EBC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0BB659BBC00A25203E21B9C3D694CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				ED016429381241C4BE508CDE853877E4 /* Pods */,
+				C5768F28D8909CB9735C29EEA321C1AA /* Products */,
+				B650E8D21EB76A113B38C844848182E2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9575BD084004659533BD06B46F685E53 /* NSTimer-Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7CDE8656A054B1ED1EABCABF1492C7 /* NSTimer+Blocks.h */,
+				5F0787BDC9B5700504894002C614B72E /* NSTimer+Blocks.m */,
+				A6717ED41D9B25BEB9527065227EAE5A /* Support Files */,
+			);
+			path = "NSTimer-Blocks";
+			sourceTree = "<group>";
+		};
+		A6717ED41D9B25BEB9527065227EAE5A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F418ABA7F2B0298E45CA8C446B6E613D /* NSTimer-Blocks.xcconfig */,
+				4C140336864010E7FC632F6B0EC3A1FA /* NSTimer-Blocks-dummy.m */,
+				0FD75619D0DE7258CEF621648BC8514A /* NSTimer-Blocks-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSTimer-Blocks";
+			sourceTree = "<group>";
+		};
+		B650E8D21EB76A113B38C844848182E2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F99269FBF744C0DDE8EEAE95A8F33 /* Pods-Siliqua */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD5F99269FBF744C0DDE8EEAE95A8F33 /* Pods-Siliqua */ = {
+			isa = PBXGroup;
+			children = (
+				189AF9B991BB81F1D0697C913F22FA8A /* Pods-Siliqua-acknowledgements.markdown */,
+				E21C120CEE7652B16AD4DB42AF121CA7 /* Pods-Siliqua-acknowledgements.plist */,
+				FCEC1D34D6CC3B76351F9D008E585228 /* Pods-Siliqua-dummy.m */,
+				8096C8AC5B10642BFF97CDCE977373EC /* Pods-Siliqua-frameworks.sh */,
+				FFFEBD470E38FE9CAC19CF072DF89852 /* Pods-Siliqua-resources.sh */,
+				DCDBED3F63613C51F4C36E9E9CCB494D /* Pods-Siliqua.debug.xcconfig */,
+				CEBB88A3D9FE83FB782FFC0C378DDB06 /* Pods-Siliqua.release.xcconfig */,
+			);
+			name = "Pods-Siliqua";
+			path = "Target Support Files/Pods-Siliqua";
+			sourceTree = "<group>";
+		};
+		C5768F28D8909CB9735C29EEA321C1AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0C2D3817F3F38F039AC653DA4CDE25 /* libNSTimer-Blocks.a */,
+				45100FC71C0E862054807EA3AE991ADB /* libPods-Siliqua.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED016429381241C4BE508CDE853877E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9575BD084004659533BD06B46F685E53 /* NSTimer-Blocks */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF43DBEB42812793DE3A46DB7107D73D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E53DB934DC501FF87B0B7A123472FE /* NSTimer+Blocks.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A69F2865F66D5F34749372451453645A /* Pods-Siliqua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6B19198C26E5FF8D2BA3455E59AD2C /* Build configuration list for PBXNativeTarget "Pods-Siliqua" */;
+			buildPhases = (
+				764A19818880E2DF7B1E8E049B866A99 /* Sources */,
+				29DDCA42E8B195B7195D0207BA6F6F36 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A057F5F9DC0B2CD08CEF51D4D1A512EC /* PBXTargetDependency */,
+			);
+			name = "Pods-Siliqua";
+			productName = "Pods-Siliqua";
+			productReference = 45100FC71C0E862054807EA3AE991ADB /* libPods-Siliqua.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA90B05AA5C2F1ADFD061D57E35B0F7A /* NSTimer-Blocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1662348920CBB1C6452CF92458303289 /* Build configuration list for PBXNativeTarget "NSTimer-Blocks" */;
+			buildPhases = (
+				D33CD92522167E97BD402A293EDA1E99 /* Sources */,
+				FB9E53A23841A32B3798606739F8EBC9 /* Frameworks */,
+				DF43DBEB42812793DE3A46DB7107D73D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSTimer-Blocks";
+			productName = "NSTimer-Blocks";
+			productReference = 1A0C2D3817F3F38F039AC653DA4CDE25 /* libNSTimer-Blocks.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C5768F28D8909CB9735C29EEA321C1AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA90B05AA5C2F1ADFD061D57E35B0F7A /* NSTimer-Blocks */,
+				A69F2865F66D5F34749372451453645A /* Pods-Siliqua */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		764A19818880E2DF7B1E8E049B866A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755D6663BD21F2B245B6FD91DA3AEECC /* Pods-Siliqua-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CD92522167E97BD402A293EDA1E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7F368DC6F253465CBF60A92EA041EF /* NSTimer+Blocks.m in Sources */,
+				D1D927CF7E659A0B1815BB61B35E1570 /* NSTimer-Blocks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A057F5F9DC0B2CD08CEF51D4D1A512EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSTimer-Blocks";
+			target = FA90B05AA5C2F1ADFD061D57E35B0F7A /* NSTimer-Blocks */;
+			targetProxy = 0A935581E6F40DE195A4128EC4F6B8A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5E4E5AB64AEFB744DD03157BBE14231E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCDBED3F63613C51F4C36E9E9CCB494D /* Pods-Siliqua.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7677352F9C6D627E56BE628FA9D98B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F418ABA7F2B0298E45CA8C446B6E613D /* NSTimer-Blocks.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSTimer-Blocks/NSTimer-Blocks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9FB27552B2BF0B96ABB3CE45BE4B6BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBB88A3D9FE83FB782FFC0C378DDB06 /* Pods-Siliqua.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A85A6ABB5351FE165AC7878AD3287B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F418ABA7F2B0298E45CA8C446B6E613D /* NSTimer-Blocks.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NSTimer-Blocks/NSTimer-Blocks-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1662348920CBB1C6452CF92458303289 /* Build configuration list for PBXNativeTarget "NSTimer-Blocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A85A6ABB5351FE165AC7878AD3287B9A /* Debug */,
+				7677352F9C6D627E56BE628FA9D98B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6B19198C26E5FF8D2BA3455E59AD2C /* Build configuration list for PBXNativeTarget "Pods-Siliqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4E5AB64AEFB744DD03157BBE14231E /* Debug */,
+				9FB27552B2BF0B96ABB3CE45BE4B6BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

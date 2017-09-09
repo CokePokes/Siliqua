@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9572C137CAB39BB584748AD4 /* libPods-Siliqua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB06820014EF84A324DBB096 /* libPods-Siliqua.a */; };
 		B5D7C64A1F63F9F100B044C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7C6491F63F9F100B044C2 /* Foundation.framework */; };
 		B5D7C65F1F63FAD100B044C2 /* Siliqua.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D7C65E1F63FAD100B044C2 /* Siliqua.m */; };
 		B5D7C6611F63FAE600B044C2 /* MediaRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D7C6601F63FAE600B044C2 /* MediaRemote.h */; };
 		B5D7C6631F63FB2600B044C2 /* MediaRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7C6621F63FB2600B044C2 /* MediaRemote.framework */; };
+		B5D7C66C1F64259B00B044C2 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7C66B1F64259B00B044C2 /* CydiaSubstrate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,10 @@
 		B5D7C6621F63FB2600B044C2 /* MediaRemote.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaRemote.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/PrivateFrameworks/MediaRemote.framework; sourceTree = DEVELOPER_DIR; };
 		B5D7C6671F63FC0800B044C2 /* SilquaPrefs.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SilquaPrefs.bundle; sourceTree = "<group>"; };
 		B5D7C66A1F63FC0800B044C2 /* SilquaPrefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SilquaPrefs.plist; sourceTree = "<group>"; };
+		B5D7C66B1F64259B00B044C2 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = ../../../../../opt/iOSOpenDev/frameworks/CydiaSubstrate.framework; sourceTree = "<group>"; };
+		BD1272EE1469C743FEB69B07 /* Pods-Siliqua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siliqua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Siliqua/Pods-Siliqua.debug.xcconfig"; sourceTree = "<group>"; };
+		DB06820014EF84A324DBB096 /* libPods-Siliqua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Siliqua.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC77D92B56265399CB419E9F /* Pods-Siliqua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siliqua.release.xcconfig"; path = "Pods/Target Support Files/Pods-Siliqua/Pods-Siliqua.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,20 +38,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D7C66C1F64259B00B044C2 /* CydiaSubstrate.framework in Frameworks */,
 				B5D7C6631F63FB2600B044C2 /* MediaRemote.framework in Frameworks */,
 				B5D7C64A1F63F9F100B044C2 /* Foundation.framework in Frameworks */,
+				9572C137CAB39BB584748AD4 /* libPods-Siliqua.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5255F4FFBF1C3E295FD240DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD1272EE1469C743FEB69B07 /* Pods-Siliqua.debug.xcconfig */,
+				DC77D92B56265399CB419E9F /* Pods-Siliqua.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B5D7C63C1F63F9F100B044C2 = {
 			isa = PBXGroup;
 			children = (
 				B5D7C64B1F63F9F100B044C2 /* Siliqua */,
 				B5D7C6481F63F9F100B044C2 /* Frameworks */,
 				B5D7C6471F63F9F100B044C2 /* Products */,
+				5255F4FFBF1C3E295FD240DC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,10 @@
 		B5D7C6481F63F9F100B044C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5D7C66B1F64259B00B044C2 /* CydiaSubstrate.framework */,
 				B5D7C6621F63FB2600B044C2 /* MediaRemote.framework */,
 				B5D7C6491F63F9F100B044C2 /* Foundation.framework */,
+				DB06820014EF84A324DBB096 /* libPods-Siliqua.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,10 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5D7C65B1F63F9F100B044C2 /* Build configuration list for PBXNativeTarget "Siliqua" */;
 			buildPhases = (
+				ABA8688B99B6F20201B7EAE2 /* [CP] Check Pods Manifest.lock */,
 				B5D7C6411F63F9F100B044C2 /* Sources */,
 				B5D7C6421F63F9F100B044C2 /* Frameworks */,
 				B5D7C6431F63F9F100B044C2 /* Headers */,
 				B5D7C6441F63F9F100B044C2 /* ShellScript */,
+				35225E0CB152EC6E2911B2C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +242,36 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		35225E0CB152EC6E2911B2C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Siliqua/Pods-Siliqua-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA8688B99B6F20201B7EAE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B5D7C6441F63F9F100B044C2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +322,7 @@
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -293,6 +346,7 @@
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -302,16 +356,24 @@
 		};
 		B5D7C65C1F63F9F100B044C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1272EE1469C743FEB69B07 /* Pods-Siliqua.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = AUYLZA5X3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Siliqua/Siliqua-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = YES;
 				iOSOpenDevCopyOnBuild = NO;
@@ -325,16 +387,24 @@
 		};
 		B5D7C65D1F63F9F100B044C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC77D92B56265399CB419E9F /* Pods-Siliqua.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = AUYLZA5X3V;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Siliqua/Siliqua-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = YES;
 				iOSOpenDevCopyOnBuild = NO;
@@ -365,6 +435,7 @@
 				B5D7C65D1F63F9F100B044C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

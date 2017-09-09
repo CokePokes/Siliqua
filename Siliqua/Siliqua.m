@@ -5,7 +5,26 @@
 
 #import <UIKit/UIKit.h>
 #import <CaptainHook/CaptainHook.h>
+#import <substrate.h>
 #import "MediaRemote.h"
+
+#import <NSTimer-Blocks/NSTimer+Blocks.h>
+
+#define CPSubstrateMethod0(op, return_type, class, name1) \
+static return_type (*_##name1)(class *self, SEL _cmd); \
+static return_type (new_##name1) (class *self, SEL _cmd)
+//call orig
+#define CPSubstrateSuper0(op, original_name) \
+original_name(op, _cmd)
+//hook
+#define CPSubstrateHook(target_class, sel, newImp, oldImp) \
+MSHookMessageEx(objc_getClass(target_class), sel, (IMP)&newImp, (IMP*)&oldImp)
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 @interface NSTimer (Private){ //yea don't use these. No point
 }
@@ -26,8 +45,10 @@
 @end
 
 @interface SBHomeScreenViewController
-- (BOOL)justTapped;
-- (void)setJustTapped:(BOOL)value;
+
+@property (nonatomic, assign) BOOL siliTapped;
+@property (nonatomic, retain) NSTimer *siliquaTimer;
+
 @end
 
 @interface SBMediaController : NSObject
@@ -78,7 +99,7 @@ bool qtToggleSiri;
 
 @end
 
-static BOOL justTapped = NO;
+//static BOOL justTapped = NO;
 
 static BOOL isShowingAss(){ //;)
     SBAssistantController *assistantController = [objc_getClass("SBAssistantController") sharedInstance];
@@ -94,6 +115,9 @@ static BOOL isShowingAss(){ //;)
 }
 
 CHDeclareClass(SBHomeScreenViewController);
+CHPrimitiveProperty(SBHomeScreenViewController, BOOL, siliTapped, setSiliTapped, NO);
+CHPropertyRetainNonatomic(SBHomeScreenViewController, NSTimer*, siliquaTimer, setSiliquaTimer);
+
 CHOptimizedMethod0(new, void, SBHomeScreenViewController, viewDidLoad)
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recivedDoubleTapNotificationFromAirPods:) name:@"com.laughingquoll.runairpodsdoubletappedaction" object:nil];
@@ -102,7 +126,7 @@ CHOptimizedMethod1(new, void, SBHomeScreenViewController, recivedDoubleTapNotifi
 {
     if ([[notification name] isEqualToString:@"com.laughingquoll.runairpodsdoubletappedaction"]) {
         // Credits to Finn Gaida who created quad tap for me :P
-        if (justTapped) {
+        if (self.siliTapped) {
             // quad tap action
             
             if(qtPausePlay){
@@ -150,12 +174,11 @@ CHOptimizedMethod1(new, void, SBHomeScreenViewController, recivedDoubleTapNotifi
                 }
             }
             
-            //[timer invalidate];
-            justTapped = NO;
+            [self.siliquaTimer invalidate];
+            self.siliTapped = NO;
         } else {
-            justTapped = YES;
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.siliTapped = YES;
+            self.siliquaTimer = [NSTimer scheduledTimerWithTimeInterval:0.6 block:^{
                 
                 if(dtPausePlay){
                     MRMediaRemoteSendCommand(kMRTogglePlayPause, 0);
@@ -201,11 +224,19 @@ CHOptimizedMethod1(new, void, SBHomeScreenViewController, recivedDoubleTapNotifi
                         [assistantController dismissAssistantView:1 forAlertActivation:nil];
                     }
                 }
-                
-                justTapped = NO;
-            });
+                self.siliTapped = NO;
+            } repeats:NO];
         }
     }
+}
+
+CPSubstrateMethod0(self, void, SBHomeScreenViewController, _dealloc)
+{
+    [self.siliquaTimer invalidate];
+    self.siliquaTimer = nil;
+    
+    if (SYSTEM_VERSION_LESS_THAN(@"10.0.0"))
+        CPSubstrateSuper0(self , __dealloc);
 }
 
 CHDeclareClass(BluetoothManager);
@@ -274,11 +305,19 @@ __attribute__((constructor)) static void initialize_Siliqua()
         settingsChangedSiliqua(NULL, NULL, NULL, NULL, NULL);
         
         CHLoadLateClass(SBHomeScreenViewController);
+        
+        CHHookProperty(SBHomeScreenViewController, siliTapped, setSiliTapped);
+        CHHookProperty(SBHomeScreenViewController, siliquaTimer, setSiliquaTimer);
+        
         CHHook0(SBHomeScreenViewController, viewDidLoad);
         CHHook1(SBHomeScreenViewController, recivedDoubleTapNotificationFromAirPods);
         
+        if (SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(@"10.0.0"))
+            CPSubstrateHook("SBHomeScreenViewController", sel_getUid("dealloc"), new__dealloc, __dealloc);
+        else
+            class_addMethod(objc_getClass("SBHomeScreenViewController"), sel_getUid("dealloc"), (IMP)new__dealloc, "v@:");
+            
         CHLoadLateClass(BluetoothManager);
         CHHook1(BluetoothManager, _postNotificationWithArray);
-        
     }
 }
